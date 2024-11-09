@@ -37,6 +37,9 @@ The following example shows the policy definition for writing to the `xbcloud-te
     "Statement": [
         {
             "Effect": "Allow",
+            "Principal": {
+                "AWS": "*"
+            },
             "Action": [
                 "s3:ListBucket"
             ],
@@ -44,6 +47,9 @@ The following example shows the policy definition for writing to the `xbcloud-te
         },
         {
             "Effect": "Allow",
+            "Principal": {
+                "AWS": "*"
+            },
             "Action": [
                 "s3:PutObject",
                 "s3:PutObjectAcl",
