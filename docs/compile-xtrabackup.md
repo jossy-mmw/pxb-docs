@@ -109,6 +109,13 @@ $ cmake -DWITH_BOOST=PATH-TO-BOOST-LIBRARY -DDOWNLOAD_BOOST=ON \
 -DBUILD_CONFIG=xtrabackup_release -DWITH_MAN_PAGES=OFF -B ..
 ```
 
+If you use [Pro builds](./pxb-pro.md), add the `-DPROBUILD=ON` option to the list:
+
+```{.bash .data-prompt="$"}
+$ cmake -DWITH_BOOST=PATH-TO-BOOST-LIBRARY -DPROBUILD=ON -DDOWNLOAD_BOOST=ON \
+-DBUILD_CONFIG=xtrabackup_release -DWITH_MAN_PAGES=OFF -B .. 
+```
+
 ### Parameter Information
 
 | **Parameter** | **Description** |
