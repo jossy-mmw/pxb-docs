@@ -145,6 +145,7 @@ extra:
 
 nav:
   - Home: index.md
+  - get-help.md
   - Release notes: 
       - Release notes index: release-notes.md
       - release-notes/8.0/8.0.35-31.0.upd.md
