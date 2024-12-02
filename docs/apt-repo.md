@@ -145,7 +145,7 @@ The following procedure installs Percona XtraBackup 8.0.
 6. Enable the repository:
 
     ```{.bash data-prompt="$"}
-    $ percona-release setup pxb-80
+    $ sudo percona-release setup pxb-80
     ```
     ??? example "Example output"
 
