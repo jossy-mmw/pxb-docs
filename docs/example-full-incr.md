@@ -86,9 +86,8 @@ BASE_DIR="/backups/mysql/full/$(ls -tr /backups/mysql/full | tail -n 1)"
 
 # Run xtrabackup with incremental backup command
 xtrabackup --backup \
-  --incremental \
+  --incremental-basedir="${BASE_DIR}" \
   --target-dir="${INCR_BACKUP_FILENAME}" \
-  --base-dir="${BASE_DIR}" \
   --user="${SERVER_USER}" \
   --password="${SERVER_PASSWORD}"
 
